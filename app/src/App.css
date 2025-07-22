@@ -1,0 +1,73 @@
+:root{
+    --bag:black;
+    --primary:white;
+    --sub:rgb(34, 34, 34);
+    --subnav:rgba(34, 34, 34, 0.361);
+    --pad:1%;
+    --in:inset 0px 0px 10px rgba(255, 255, 255, 0.234);
+    --grad:linear-gradient(101deg,rgba(0, 102, 255, 1) 0%, rgba(234, 140, 255, 1) 100%);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+
+body{
+    background-color: var(--bag);
+    color: var(--primary);
+    margin: 0px;   
+}
+nav{
+    background-color:var(--subnav);
+    width: 96%;
+    border-radius: 10px;
+    position: fixed;
+    margin: 0px;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    display: flex;
+    font-size: 4em;
+    top: 3%; 
+    z-index: 9999;
+    box-shadow: var(--in);
+    padding: var(--pad);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.move{
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+a{
+    color: var(--primary);
+    text-decoration: none;
+}
+a:hover{
+    color: #0066FF;
+
+}
+
+
+/* home */
+
+
+#logo{
+   height: 10em;
+   width: 10em;
+}
+
+.c1{
+    background-color: var(--subnav);
+    backdrop-filter: blur(10px);
+    display: flex;
+    box-shadow: var(--in);
+    height: 10em;
+    padding:var(--pad);
+    font-size: 2em;
+    border-radius: 10px;
+}
+
+.home{
+    padding: 20%;
+}
