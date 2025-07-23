@@ -1,5 +1,3 @@
-import  './patent.css';
-
 function Patent(){
     const patents = [
         {
