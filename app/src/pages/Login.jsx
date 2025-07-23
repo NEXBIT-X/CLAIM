@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './login.css'
+import  logo from '../assets/claim.svg'  
 
 function App() {
   const [email, setEmail] = useState('')
@@ -20,7 +21,7 @@ function App() {
     <div className="login-bg">
       <div className="login-container">
         <form className={`login-box ${popAnimation ? 'pop-in' : ''}`} onSubmit={handleLogin}>
-          <img src={reactLogo} alt="Logo" className="login-logo" />
+          <img src={logo} alt="Logo" className="login-logo" />
           <h2 className="login-title"></h2>
           <label className="login-label">User Name</label>
           <input
