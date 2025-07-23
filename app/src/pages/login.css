@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Quicksand:wght@500&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Quicksand', 'Montserrat', sans-serif;
+  background: linear-gradient(135deg, #181818 0%, #232526 100%);
+}
+
+.login-bg {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #181818 0%, #232526 100%);
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* Entrance animation for elements */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Pop-in effect for the login box on load */
+@keyframes popIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  60% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.login-box {
+  background: rgba(30, 30, 30, 0.98);
+  padding: 2rem 2rem;
+  border-radius: 40px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.45);
+  display: flex;
+  flex-direction: column;
+  min-width: 420px;
+  align-items: center;
+  animation: popIn 0.8s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.login-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: #a777e3;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 2px;
+  animation: fadeInUp 1s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.login-label {
+  font-size: 1rem;
+  color: #e0e0e0;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  align-self: flex-start;
+  animation: fadeInUp 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* Continuous floating animation for the logo */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.login-logo {
+  width: 180px; /* adjust as needed to fit your design */
+  height: auto;
+  margin-bottom: 1rem;
+  animation: float 3s ease-in-out infinite, fadeInUp 1.2s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+/* Keep existing styles for inputs and button */
+.login-input {
+  padding: 0.7rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background: #232526;
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-family: 'Quicksand', sans-serif;
+  color: #fff;
+  transition: box-shadow 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(167,119,227,0.08);
+  width: 100%;
+  animation: fadeInUp 1.4s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.login-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #a777e3;
+  background: #181818;
+}
+
+.login-btn {
+  margin-top: 1.5rem;
+  padding: 0.8rem 0;
+  background: linear-gradient(90deg, #6e8efb 0%, #a777e3 100%);
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 4px 16px rgba(110,142,251,0.15);
+  width: 100%;
+  animation: fadeInUp 1.6s cubic-bezier(.68,-0.55,.27,1.55);
+}
+
+.login-btn:hover {
+  background: linear-gradient(90deg, #a777e3 0%, #6e8efb 100%);
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 8px 24px rgba(167,119,227,0.18);
+}
+
