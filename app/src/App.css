@@ -47,7 +47,7 @@ a:hover{
 }
 
 
-/* home */
+/*---------------------------- home ------------------------------*/
 
 
 #logo{
@@ -158,5 +158,36 @@ a:hover{
       color: #fff;
     }
 
-      /* patent */
+      /* -------------------------------------patent---------------------------------- */
+
+
+.patent-header{
+    margin: var(--marg);
+    background-color: var(--subnav);
+    padding: var(--pad);
+    border-radius: 10px;
+    box-shadow: var(--in);
+    width: 60%;
+    justify-content: center;
+}
+
+
+.patents{
+    padding: 4%;
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(30em,1fr)) ;
+    justify-content: space-around;
+    gap: 3em;
+}
+
+
+
+
+.pat{
+    width: 100%;
+    background-color: var(--subnav);
+    padding: var(--pad);
+    border-radius: 10px;
+}
+
 
