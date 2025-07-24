@@ -1,11 +1,12 @@
 import logo from '../assets/logo.svg';
+import Foot  from './Foot';
 
 function Home(){
     return(
         <div className='home'>
             {/* <center><img id="logo" src={logo}></img></center> */}
             <div class="carousel">
-            <img src={logo} alt="CLAIM" />
+            <img src={logo} alt="CLAIM" id='log'/>
             <blockquote class="testimonial">
             <p class="testimonial-text">CLAIM</p>
             <p class="testimonial-author">Decentralized Idea Proof Platform</p><br/>
@@ -100,54 +101,7 @@ function Home(){
           </div>
         </div>
       </section>
-      <footer className="footer">
-      <div className="footer-top">
-        <div className="footer-col logo">
-        <h1>CLAIM</h1>
-        </div>
-
-        <div className="footer-col">
-        <h3>CLAIM</h3>
-        <ul>
-          <li><a href="#">Get CLAIM</a></li>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Patent</a></li>
-          <li><a href="#">Login</a></li>
-          <li><a href="#">Profile</a></li>
-          <li><a href="#">Log Out</a></li>
-        </ul>
-        </div>
-
-        <div className="footer-col">
-        <h3>Developer</h3>
-        <ul>
-          <li><a href="https://claim.hashnode.space/">View the Docs</a></li>
-          <li><a href="#">Wallet Connect</a></li>
-          <li><a href="https://github.com/ABHIJEETH-V-N/CLAIM">GitHub Repo</a></li>
-        </ul>
-        </div>
-
-        <div className="footer-col">
-        <h3>About</h3>
-        <ul>
-          <li><a href="#">NEXBIT</a></li>
-        </ul>
-        </div>
-      </div>
-
-      <div className="footer-bottom">
-        <div className="language">
-        🌐 English (UK)
-        </div>
-
-        <div className="footer-links">
-        <a href="#">NEXBIT</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms of Use</a>
-        </div>
-      </div>
-      </footer>
-
+      <Foot/>
         </div>
     );
 }

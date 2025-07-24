@@ -14,7 +14,6 @@ function App() {
       try {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
         setAccount(accounts[0])
-        // You can redirect or show success here
       } catch (err) {
         // Handle error (user denied, etc.)
       }
@@ -26,6 +25,10 @@ function App() {
     }, 300)
   }
 
+  const handleDisconnect = () => {
+    setAccount(null)
+  }
+
   return (
     <div className="login-bg">
       <div className="login-container">
@@ -35,7 +38,11 @@ function App() {
           <label className="login-label" style={{ display: "block", textAlign: "center", width: "100%" }}>
             <b> Link your Metamask</b>
           </label>
-          <button className="login-btn" type="submit">Connect</button>
+          {!account ? (
+            <button className="login-btn" type="submit">Connect</button>
+          ) : (
+            <button className="login-btn" type="button" onClick={handleDisconnect}>Disconnect</button>
+          )}
           {account && (
             <div style={{ marginTop: "16px", color: "#6e8efb", textAlign: "center" }}>
               Connected: {account}
