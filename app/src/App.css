@@ -219,3 +219,89 @@ header {
   flex-direction: column;
   gap: 1rem;
 }
+
+/*Footer*/
+.footer {
+  padding: 40px;
+  background: var(--subnav);;
+  border-top: 1px solid #141414;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.footer-col {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-col h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin: 5px 0;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-col ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo h1 {
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+.footer-bottom {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+.language {
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+
+.social-icons img {
+  width: 20px;
+  height: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
