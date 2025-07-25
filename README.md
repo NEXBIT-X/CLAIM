@@ -21,7 +21,7 @@
 
 ## 🚀 Overview
 
-**CLAIM** is a decentralized platform that provides **government-verified proof of innovation**.  
+**CLAIM** is a decentralized platform that provides **government-verified patent uploading platform**.  
 By leveraging **Ethereum blockchain** and **Pinata (IPFS)**, CLAIM ensures that patents are:
 
 - **Tamper-proof**
