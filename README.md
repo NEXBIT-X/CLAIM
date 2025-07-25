@@ -1,39 +1,88 @@
-<center>
-<img src="app/public/banner.svg"  >
-</center>
+# CLAIM 
+`Decentralized Government-Verified Idea Proof Platform`
+`social media for uploading patents`
 
-# CLAIM
-### Decentralized Idea Proof Platform
+<p align="center">
+  <img src="app/public/banner.svg" alt="CLAIM Banner" width="80%">
+</p>
 
-CLAIM – Decentralized Idea Proof Platform allows any user to:
+<p align="center">
+  <a href="https://claim-nexbit.vercel.app">
+    <img src="https://img.shields.io/badge/Live%20Demo-claim--nexbit.vercel.app-blue?style=for-the-badge" alt="Live Demo">
+  </a>
+  <a href="https://opensource.org/licenses/MIT">
+    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
+  </a>
+  <img src="https://img.shields.io/badge/Blockchain-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum" alt="Ethereum">
+  <img src="https://img.shields.io/badge/Storage-Pinata%20(IPFS)-blueviolet?style=for-the-badge&logo=ipfs" alt="Pinata">
+</p>
 
-- Upload a description and file (e.g., PDF) of their idea.
-- Connect a wallet like MetaMask for identity.
-- Mint a unique NFT (Non-Fungible Token) that proves the idea was theirs — with a timestamp.
-- Store the document in decentralized storage (IPFS).
-- View and share their proof publicly.
+---
 
-This provides quick, tamper-proof, and transparent proof that the idea existed — helping defend against future disputes or infringements.
+## 🚀 Overview
+
+**CLAIM** is a decentralized platform that provides **government-verified proof of innovation**.  
+By leveraging **Ethereum blockchain** and **Pinata (IPFS)**, CLAIM ensures that patents are:
+
+- **Tamper-proof**
+- **Properly indexed**
+- **Future-proof and globally discoverable**
+
+> ⚠️ **Important:** Only patents officially verified by government authorities can be submitted and minted on CLAIM.
+
+---
+
+## ✨ Key Features
+
+- **🔒 Government Verification Required**  
+  Only patents confirmed via official databases (e.g., IPO India, WIPO) can be added.  
+
+- **📂 Indexed & Permanent Storage**  
+  Patents are stored on **Pinata (IPFS)** with cryptographic hashing for easy retrieval and long-term accessibility.  
+
+- **⛓ Immutable Blockchain Proof**  
+  Ownership, metadata, and timestamps are stored permanently on **Ethereum**.  
+
+- **🌐 Public Innovation Network**  
+  Verified patents are showcased publicly for visibility, collaboration, and credibility.  
+
+- **🛡 Transparent & Auditable**  
+  Anyone can verify the authenticity of patents directly via blockchain data.
+
+---
+
+## 🛠 How It Works
+
+1. **Connect Wallet (MetaMask)** – Authenticate via Ethereum wallet.  
+2. **Submit Patent Details** – Upload PDF and metadata.  
+3. **Government Verification API** – Cross-checks and verifies authenticity.  
+4. **Mint Patent NFT** – Creates an immutable record on Ethereum.  
+5. **Store on Pinata (IPFS)** – Files are stored and indexed permanently.  
+6. **Public Display** – Verified patents appear on the CLAIM platform.
+
+---
+
+## 🏗 Architecture
 
 ```mermaid
-graph LR
+graph TD
 subgraph patent-block
-   a[owner]
-   b[ipfscid]
-   c[title]
-   d[ispublic]
-   e[timestamp]
+   a[Owner Wallet Address]
+   b[IPFS CID -Pinata]
+   c[Patent Title]
+   d[Govt Verification Flag]
+   e[Timestamp]
 end
 
 subgraph new-patent
-    f[pdfID->encoded]
-    g[title]
-    h[closed/open]
+    f[PDF ID → Encoded Metadata]
+    g[Title / Metadata]
+    h[Closed/Open Access]
 end
 new-patent-->i
-    i((add))-->patent-block
-    
-subgraph view
-
-end
+i((Add → Verify → Mint))-->patent-block
 ```
+
+## 🌐 Prototype
+👉 Try it live: https://claim-nexbit.vercel.app
+
