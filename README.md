@@ -1,5 +1,5 @@
 # CLAIM (PROTOTYPE)
-`Decentralized Government-Verified Idea Proof Platform`
+`Decentralized Government-Verified Patent Uploading Platform`
 `social media for uploading patents`
 
 <p align="center">
