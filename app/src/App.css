@@ -16,10 +16,10 @@
   
 }
 *{
-  color:var(var(--primary));
+  color:var(--primary);
 }
 body,html{
-  background-color: 1b1c1c;
+  background-color: #1b1c1c;
   color: var(--primary);
   margin: 0px;
 }
@@ -81,7 +81,7 @@ a:hover {
 }
 
 .home {
-  color:var(var(--primary));
+  color:var(--primary);
 }
 
 .carousel {

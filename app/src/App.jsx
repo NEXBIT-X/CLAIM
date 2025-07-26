@@ -2,10 +2,11 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from 'react';
 import logo from './assets/legacy.svg';
-import Home from './pages/Home.';
+import Home from './pages/Home';
 import Dash from './pages/Dash';
 import Patent from './pages/Patent';
 import Login from './pages/Login';
+
 
 
 function SideNav({ isOpen, toggleNav }) {
@@ -40,7 +41,7 @@ function App(){
   };
   
   return (
-    <Router>
+    <Router basename="/CLAIM">`
       <header>
         <button className="hamburger" onClick={toggleNav}>
           <span></span>

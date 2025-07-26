@@ -14,7 +14,7 @@ function App() {
       try {
         const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' })
         setAccount(accounts[0])
-      } catch (err) {
+      } catch {
         // Handle error (user denied, etc.)
       }
     } else {
