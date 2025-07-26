@@ -2,12 +2,12 @@ import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { useState } from 'react';
 import logo from './assets/legacy.svg';
-import Home from './pages/Home.';
+import Home from './pages/Home';
 import Dash from './pages/Dash';
 import Patent from './pages/Patent';
 import Login from './pages/Login';
 // Removed unused imports
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function SideNav({ isOpen, toggleNav }) {
   return (
@@ -41,7 +41,7 @@ function App(){
   };
   
   return (
-    <Router>
+    <Router basename="/CLAIM">`
       <header>
         <Analytics/>
         <button className="hamburger" onClick={toggleNav}>
