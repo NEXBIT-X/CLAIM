@@ -6,8 +6,7 @@ import Home from './pages/Home.';
 import Dash from './pages/Dash';
 import Patent from './pages/Patent';
 import Login from './pages/Login';
-// Removed unused imports
-import { Analytics } from "@vercel/analytics/next"
+
 
 function SideNav({ isOpen, toggleNav }) {
   return (
@@ -43,7 +42,6 @@ function App(){
   return (
     <Router>
       <header>
-        <Analytics/>
         <button className="hamburger" onClick={toggleNav}>
           <span></span>
           <span></span>
