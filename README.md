@@ -83,6 +83,4 @@ new-patent-->i
 i((Add → Verify → Mint))-->patent-block
 ```
 
-## 🌐 Prototype
-👉 Try it live: https://claim-nexbit.vercel.app
 
