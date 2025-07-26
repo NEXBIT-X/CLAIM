@@ -83,4 +83,3 @@ new-patent-->i
 i((Add → Verify → Mint))-->patent-block
 ```
 
-
