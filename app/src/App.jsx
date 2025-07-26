@@ -41,7 +41,7 @@ function App(){
   };
   
   return (
-    <Router basename="/CLAIM">`
+    <Router>`
       <header>
         <button className="hamburger" onClick={toggleNav}>
           <span></span>
