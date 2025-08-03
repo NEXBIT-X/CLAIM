@@ -10,9 +10,7 @@
   <a href="https://claim-nexbit.vercel.app">
     <img src="https://img.shields.io/badge/Live%20Demo-claim--nexbit.vercel.app-blue?style=for-the-badge" alt="Live Demo">
   </a>
-  <a href="https://opensource.org/licenses/MIT">
-    <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="License: MIT">
-  </a>
+ 
   <img src="https://img.shields.io/badge/Blockchain-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum" alt="Ethereum">
   <img src="https://img.shields.io/badge/Storage-Pinata%20(IPFS)-blueviolet?style=for-the-badge&logo=ipfs" alt="Pinata">
 </p>
