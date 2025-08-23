@@ -15,7 +15,10 @@ export function Hero() {
       <p className="z-50 text-2xl text-center">A Web3 Based Patent Proving Platform </p>
       <Link href="/protected"  className="p-3 bg-transparent backdrop-blur-2xl border-border rounded-sm hover:bg-black transition-colors ease-linear ">GET STARTED</Link>
       <div className=" mt-8">
-        <img className="w-full ml-0" width="100%"  src="demo.svg" alt="Demo" />
+        <video className="rounded-2xl"  width="" height="" autoPlay loop muted>
+      <source src="demo.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
       </div>
       </div>
       
