@@ -7,8 +7,8 @@
 </p>
 
 <p align="center">
-  <a href="https://claim-nexbit.vercel.app">
-    <img src="https://img.shields.io/badge/Live%20Demo-claim--nexbit.vercel.app-blue?style=for-the-badge" alt="Live Demo">
+  <a href="https://claim-v2.vercel.app">
+    <img src="https://img.shields.io/badge/Live%20Demo-claim-v2.vercel.app-blue?style=for-the-badge" alt="Live Demo">
   </a>
  
   <img src="https://img.shields.io/badge/Blockchain-Ethereum-3C3C3D?style=for-the-badge&logo=ethereum" alt="Ethereum">
