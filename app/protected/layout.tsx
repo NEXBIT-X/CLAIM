@@ -9,7 +9,6 @@ import {
   LayoutDashboard,
   BarChart,
   Settings,
-  LifeBuoy,
   Home,
   WalletCards,
 } from "lucide-react";
@@ -97,10 +96,6 @@ export default function ProtectedLayout({
               <WalletCards size={24} />
               <span className="md:hidden">Wallet</span>
             </Link>
-            <div className="flex items-center gap-3 md:justify-center p-3 w-full md:w-auto">
-              <ThemeSwitcher />
-              <span className="md:hidden">Theme</span>
-            </div>
           </nav>
           
           {/* Support Link */}
@@ -108,10 +103,9 @@ export default function ProtectedLayout({
             <Link
               href="#"
               className="flex items-center gap-3 md:justify-center p-3 rounded-lg hover:bg-muted transition-colors w-full md:w-auto"
-              onClick={() => setIsSidebarOpen(false)}
-            >
-              <LifeBuoy size={24} />
-              <span className="md:hidden">Support</span>
+              onClick={() => setIsSidebarOpen(false)}>
+               <ThemeSwitcher />
+              <span className="md:hidden">Theme</span>
             </Link>
           </div>
         </div>
