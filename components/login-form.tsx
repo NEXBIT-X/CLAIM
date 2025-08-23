@@ -101,10 +101,13 @@ export function LoginForm({
               >
                 Sign up
               </Link>
+              
             </div>
           </form>
+      
         </CardContent>
       </Card>
+                    <Link className="text-center bg-sky-600 p-4" href="/protected"> click here if login doesnt work</Link>
     </div>
   );
 }
