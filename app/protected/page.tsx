@@ -19,7 +19,7 @@ export default async function ProtectedPage() {
         
         {/* Logo Section - Top Left */}
         <div className="col-span-1 row-span-1">
-          <div className="card h-full flex items-center justify-center bg-card rounded-2xl p-8 border border-gray-200 dark:border-gray-700 shadow-lg">
+          <div className="card h-full flex items-center justify-center bg-card rounded-2xl p-8 border border-border shadow-lg">
             <img
               src="/logo.svg"
               alt="CLAIM"
@@ -30,7 +30,7 @@ export default async function ProtectedPage() {
 
         {/* Main Content - Top Center & Right */}
         <div className="col-span-2 row-span-1">
-          <div className="card h-full bg-card rounded-2xl p-8 border border-gray-200 dark:border-gray-700 shadow-lg">
+          <div className="card h-full bg-card rounded-2xl p-8 border border-border shadow-lg">
             <h1 className="text-3xl font-bold text-gray-900 dark:text-white mb-4">CLAIM Platform</h1>
             <p className="text-gray-700 dark:text-gray-300 text-lg leading-relaxed">
               Decentralized platform for government-verified patent protection. 
@@ -48,7 +48,7 @@ export default async function ProtectedPage() {
 
         {/* Features Grid - Bottom Row */}
         <div className="col-span-1 row-span-1">
-          <div className="card h-full bg-card rounded-2xl p-6 border border-gray-200 dark:border-gray-700 shadow-lg flex flex-col justify-center">
+          <div className="card h-full bg-card rounded-2xl p-6 border border-border shadow-lg flex flex-col justify-center">
             <div className="w-full h-full border-blue-600 rounded-xl flex items-center justify-center mb-4">
               <svg className="w-full h-full" fill="currentColor " viewBox="0 0 24 24">
                 <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
@@ -60,7 +60,7 @@ export default async function ProtectedPage() {
         </div>
 
         <div className="col-span-1 row-span-1">
-          <div className="card h-full bg-card rounded-2xl p-6 border border-gray-200 dark:border-gray-700 shadow-lg flex flex-col justify-center">
+          <div className="card h-full bg-card rounded-2xl p-6 border border-border shadow-lg flex flex-col justify-center">
             <div className="w-full h-full border-purple-600 rounded-xl flex items-center justify-center mb-4">
               <svg className="w-full h-full " fill="currentColor" viewBox="0 0 24 24">
                 <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
@@ -72,7 +72,7 @@ export default async function ProtectedPage() {
         </div>
 
         <div className="col-span-1 row-span-1">
-          <div className="card h-full bg-card rounded-2xl p-6 border border-gray-200 dark:border-gray-700 shadow-lg flex flex-col justify-center">
+          <div className="card h-full bg-card rounded-2xl p-6 border border-border shadow-lg flex flex-col justify-center">
             <div className="w-full h-full b-green-600 rounded-xl flex items-center justify-center mb-4">
               <svg className="w-full h-full " fill="currentColor" viewBox="0 0 24 24">
                 <path d="M13 10V3L4 14h7v7l9-11h-7z"/>
