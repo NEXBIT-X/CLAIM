@@ -5,6 +5,7 @@ import {
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
+import Link from "next/link";
 
 export default function Page() {
   return (
@@ -20,11 +21,11 @@ export default function Page() {
             </CardHeader>
             <CardContent>
               <p className="text-sm text-muted-foreground">
-                You&apos;ve successfully signed up. Please check your email to
-                confirm your account before signing in.
+                You&apos;ve successfully signed up. 
               </p>
             </CardContent>
           </Card>
+             <Link className="text-center bg-sky-600 p-4 rounded-sm" href="/protected"> sign in</Link>
         </div>
       </div>
     </div>
