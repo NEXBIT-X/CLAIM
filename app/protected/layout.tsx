@@ -11,6 +11,7 @@ import {
   Settings,
   LifeBuoy,
   Home,
+  WalletCards,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import "./custom-scrollbar.css";
@@ -81,7 +82,7 @@ export default function ProtectedLayout({
               <span className="md:hidden">Dashboard</span>
             </Link>
             <Link
-              href="protected/dash"
+              href="/protected/dash"
               className="flex items-center gap-3 md:justify-center p-3 rounded-lg hover:bg-muted transition-colors w-full md:w-auto"
               onClick={() => setIsSidebarOpen(false)}
             >
@@ -89,12 +90,12 @@ export default function ProtectedLayout({
               <span className="md:hidden">Analytics</span>
             </Link>
             <Link
-              href="#"
+              href="/protected/wallet"
               className="flex items-center gap-3 md:justify-center p-3 rounded-lg hover:bg-muted transition-colors w-full md:w-auto"
               onClick={() => setIsSidebarOpen(false)}
             >
-              <Settings size={24} />
-              <span className="md:hidden">Settings</span>
+              <WalletCards size={24} />
+              <span className="md:hidden">Wallet</span>
             </Link>
             <div className="flex items-center gap-3 md:justify-center p-3 w-full md:w-auto">
               <ThemeSwitcher />

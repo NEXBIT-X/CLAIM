@@ -2,7 +2,9 @@
 
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
-
+import {
+  Shield
+} from "lucide-react";
 interface Member {
   id: string;
   name: string;
@@ -97,7 +99,7 @@ export default function Protect() {
             </svg>
             Back to Dashboard
           </button>
-          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">Protect New Patent </h1>
+          <h1 className="text-5xl md:text-6xl font-bold mb-4 text-gray-900 dark:text-white">Protect New Pattent </h1>
           <p className="text-xl md:text-2xl font-light">
             Secure your design Patents, algorithms, and innovative solutions with blockchain technology
           </p>
@@ -115,7 +117,7 @@ export default function Protect() {
               name="PatentName"
               value={formData.PatentName}
               onChange={handleInputChange}
-              className="w-full p-4 rounded-lg bg-gray-800/50 border border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+              className="w-full p-4 rounded-lg bg-card border border-border focus:border-blue-500 focus:outline-none transition-colors"
               placeholder="e.g., Advanced ML Algorithm Patent, UI/UX Design System, Data Structure Patent"
               required
             />
@@ -132,7 +134,7 @@ export default function Protect() {
               name="dateOfCommence"
               value={formData.dateOfCommence}
               onChange={handleInputChange}
-              className="w-full p-4 rounded-lg bg-gray-800/50 border border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+              className="w-full p-4 rounded-lg bg-card border border-border focus:border-blue-500 focus:outline-none transition-colors"
               required
             />
           </div>
@@ -164,7 +166,7 @@ export default function Protect() {
                       type="text"
                       value={member.name}
                       onChange={(e) => updateMember(member.id, 'name', e.target.value)}
-                      className="w-full p-3 rounded-lg bg-gray-800/50 border border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+                      className="w-full p-3 rounded-lg bg-card border border-border focus:border-blue-500 focus:outline-none transition-colors"
                       placeholder="Contributor name"
                       required
                     />
@@ -176,7 +178,7 @@ export default function Protect() {
                         type="email"
                         value={member.email}
                         onChange={(e) => updateMember(member.id, 'email', e.target.value)}
-                        className="w-full p-3 rounded-lg bg-gray-800/50 border border-gray-600 focus:border-blue-500 focus:outline-none transition-colors"
+                        className="w-full p-3 rounded-lg bg-card border border-border focus:border-blue-500 focus:outline-none transition-colors"
                         placeholder="contributor@email.com"
                         required
                       />
@@ -210,7 +212,7 @@ export default function Protect() {
               value={formData.description}
               onChange={handleInputChange}
               rows={6}
-              className="w-full p-4 rounded-lg bg-gray-800/50 border border-gray-600 focus:border-blue-500 focus:outline-none transition-colors resize-vertical"
+              className="w-full p-4 rounded-lg bg-card border border-border focus:border-blue-500 focus:outline-none transition-colors resize-vertical"
               placeholder="Describe your Patent in detail: methodology, structure, algorithm logic, design principles, implementation approach, unique features, and innovative aspects that make this Patent valuable..."
               required
             />
@@ -303,7 +305,7 @@ export default function Protect() {
                   Processing...
                 </div>
               ) : (
-                '🛡️ Protect My Patent'
+                'Protect My Patent'
               )}
             </button>
           </div>

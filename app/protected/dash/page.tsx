@@ -4,7 +4,7 @@ const Dashboard = () => {
   return (
     <div className="min-h-screen p-6">
       {/* Grid Layout Container */}
-      <div className="max-w-7xl mx-auto grid grid-cols-3 gap-6 h-screen">
+      <div className="max-w-full mx-auto grid grid-cols-3 gap-6 h-screen">
         
         {/* Dashboard Stats - Top Left */}
         <div className="col-span-1 row-span-1">

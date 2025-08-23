@@ -29,7 +29,6 @@
     --chart-4: 43 74% 66%;
     --chart-5: 27 87% 67%;
     --radius: 0.5rem;
-   
   }
   .dark {
     --background: 0 0% 3.5%;
@@ -60,6 +59,8 @@
   }
 }
 
+
+
 @layer base {
   * {
     @apply border-border;
@@ -78,3 +79,28 @@
   'GRAD' 0,
   'opsz' 24
 }
+
+.btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  outline: none;
+  cursor: pointer;
+  width: 30%;
+  height: 50px;
+  background: hsl(var(--card));
+  border-radius: 3px;
+  border: 1px solid hsl(var(--border));
+  transition: all 0.2s ease;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 14px;
+  color: var(--card);
+  font-weight: 600;
+  text-shadow: 0 1px hsl(var(--background));
+}
+
+.btn:hover{
+  width: 50%;
+  color: var(--primary);
+}
+
