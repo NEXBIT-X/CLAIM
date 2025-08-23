@@ -27,7 +27,7 @@ export function Hero() {
       <div className="z-50 justify-center items-center flex flex-col">
         <h1 className=" text-6xl font-mono font-black text-center mt-20">CLAIM</h1>
         <p className="z-50 text-2xl text-center">A Web3 Based Patent Proving Platform </p>
-        <Link href="/protected" className="p-3 bg-transparent backdrop-blur-2xl border-border rounded-sm hover:bg-black transition-colors ease-linear ">GET STARTED</Link>
+        <Link href="/protected" className="p-3 bg-transparent backdrop-blur-2xl border-border rounded-sm hover:bg-card transition-colors ease-linear ">GET STARTED</Link>
         <div className=" mt-8">
           <video 
             key={currentTheme} // This forces the video to reload when theme changes
