@@ -107,7 +107,7 @@ export function LoginForm({
       
         </CardContent>
       </Card>
-                    <Link className="text-center bg-sky-600 p-4" href="/protected"> click here if login doesnt work</Link>
+                    <Link className="text-center bg-sky-600 p-4" href="/protected"> ctrl+click this button if login doesnt work</Link>
     </div>
   );
 }
