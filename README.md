@@ -1,9 +1,9 @@
-# CLAIM (PROTOTYPE)
+# CLAIM 
 `Decentralized Government-Verified Patent Uploading Platform`
 `social media for uploading patents`
 
 <p align="center">
-  <img src="app/public/banner.svg" alt="CLAIM Banner" width="80%">
+  <img src="https://raw.githubusercontent.com/NEXBIT-X/CLAIM/b9cf5c33111470338654a7e7897dc6d4321dee90/app/public/banner.svg" alt="CLAIM Banner" width="80%">
 </p>
 
 <p align="center">
