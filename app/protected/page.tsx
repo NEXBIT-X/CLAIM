@@ -8,9 +8,9 @@ const Info = () => {
         <div className="col-span-1 row-span-1">
           <div className="card h-full flex items-center justify-center bg-gradient-to-br from-blue-500 to-purple-600 rounded-2xl">
             <img
-              src="/logo.svg"
+              src="https://raw.githubusercontent.com/NEXBIT-X/CLAIM/b9cf5c33111470338654a7e7897dc6d4321dee90/app/src/assets/legacy.svg"
               alt="CLAIM"
-              className="h-24 w-24 filter brightness-0 invert"
+              className="h-20 w-20 filter brightness-0 invert"
             />
           </div>
         </div>

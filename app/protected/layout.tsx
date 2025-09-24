@@ -11,6 +11,7 @@ import {
   Settings,
   Home,
   WalletCards,
+  File,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import "./custom-scrollbar.css";
@@ -95,6 +96,14 @@ export default function ProtectedLayout({
             >
               <WalletCards size={24} />
               <span className="md:hidden">Wallet</span>
+            </Link>
+            <Link
+              href="/protected/browse-patents"
+              className="flex items-center gap-3 md:justify-center p-3 rounded-lg hover:bg-muted transition-colors w-full md:w-auto"
+              onClick={() => setIsSidebarOpen(false)}
+            >
+              <File size={24} />
+              <span className="md:hidden">Patents</span>
             </Link>
           </nav>
           

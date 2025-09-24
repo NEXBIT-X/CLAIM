@@ -7,6 +7,8 @@ import { ConnectSupabaseSteps } from "@/components/tutorial/connect-supabase-ste
 import { SignUpUserSteps } from "@/components/tutorial/sign-up-user-steps";
 import { hasEnvVars } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
@@ -28,20 +30,20 @@ export default function Home() {
           </div>
         </nav>
         
-        <div className="p-4">
+        <div>
+          <Image 
+          alt="Background Logo" 
+           height={800} 
+          width={800}
+          className="fixed w-screen h-screen  scale-150 -z-30 mt-80 blur-2xl " 
+          src="/logo.svg" 
+        
+        />
           <Hero />
-          
         </div>
 
-        <footer className="w-11/12 h-2  bg-card rounded-t-2xl z-10 w-full flex items-center justify-center border-t mx-auto text-center text-xs gap-8 py-16">
-          <p>
-            Made with ❤️ by team{" "}
-            <Link href="https://nexbitx.vercel.app" className="font-bold hover:underline">
-            NEXBIT
-            </Link>
-          </p>
-          
-        </footer>
+        
+          <Footer></Footer>
       </div>
     </main>
   );
